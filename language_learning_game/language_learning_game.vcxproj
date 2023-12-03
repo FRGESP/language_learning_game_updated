@@ -136,10 +136,12 @@
     <ClCompile Include="game.cpp" />
     <ClCompile Include="grammar_game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mixnmatch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h" />
     <ClInclude Include="grammar_game.h" />
+    <ClInclude Include="mixnmatch.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
