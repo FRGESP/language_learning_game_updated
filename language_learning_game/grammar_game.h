@@ -33,9 +33,9 @@ class grammar_game : public Game
 	string correctWord, incorrectWord, datasentenceToComplete;
 	//Remove the string[100] and int i statements once they are not needed, this is just for the example
 	int i,index;
-	string sentences[100] = { "Hello, _ are you? ","Yo ___ voy al gymnasio  ","You are _ " /*STOPS HERE*/,"Mi color favorito es _" ,"I will _ in the library"," ¿ _ hambre?",  "I like to read _","La _ se llama Sofia","The teacher _ spanish" ,"La casa es __" };
-	string correctWords[100] = { "How","voy","beautiful"/*STOPS HERE*/ ,"amarillo" ,"sing","Tienes",  "Books","Niña","teaches" ,"Grande" };
-	string incorrectWords[100] = { "red","perro","tree"/*STOPS HERE*/,"encantado" ,"study","Poner",  "Food","Niño","throws" ,"Gato" };
+	string sentences[100] = { "Hello, _ are you? ","Yo ___ al gymnasio  ","You are _ " /*STOPS HERE*/,"Mi color favorito es _" ,"I will _ in the library"," ¿ _ hambre?",  "I like to read _","La _ se llama Sofia","The teacher _ spanish" ,"La casa es __" };
+	string correctWords[100] = { "How","voy","beautiful"/*STOPS HERE*/ ,"amarillo" ,"study","Tienes",  "Books","Niña","teaches" ,"Grande" };
+	string incorrectWords[100] = { "red","perro","tree"/*STOPS HERE*/,"encantado" ,"sing","Poner",  "Food","Niño","throws" ,"Gato" };
 	void initializeVariables();
 	void initWindow();
 	void initPlayer();

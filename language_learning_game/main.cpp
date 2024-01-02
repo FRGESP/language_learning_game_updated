@@ -1,6 +1,9 @@
 // language_learning_game.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+// language_learning_game.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
@@ -26,24 +29,22 @@ void menu()
     cout << "---------------------------------------------------" << endl;
     cout << "Select an option: ";
 }
-int main() 
+int main()
 {
-    grammar_game game1;
+
     MixNMatchGame MG;
     int option;
     do
     {
         menu();
         cin >> option;
-        switch (option)
-        {
-        case 1:
+        if (option == 1) {
             system("cls");
             MG.play();
-            system("pause");
             system("cls");
-            break;
-        case 2:
+        }
+        else if (option == 2) {
+            grammar_game game1;
             system("cls");
             while (game1.getWindowIsOpen())
             {
@@ -51,11 +52,11 @@ int main()
             }
             system("pause");
             system("cls");
-            break;;
-        default:
-            break;
         }
-    } while (option != 3);
-    return 0;
+        else {
+            return 0;
+        }
+    } while (option != 5);
+
 
 }
